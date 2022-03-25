@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noor Al Islam shop for curtains, corners and modern sofas of the best types of materials and high quality,
+    you can contact us through the website.....">
+      <link rel="stylesheet" href="css/results.css">
+      <!-- font Awesome -->
+         <link rel="stylesheet" href="css/all.min.css">
+         <!-- ملف normalize اساسي في الموقع لتظبيطه -->
+         <link rel="stylesheet" href="css/normalize.css">
+                  <!-- google fonts -->
+                  <link rel="preconnect" href="https://fonts.googleapis.com">
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Results</title>
+</head>
+<body>
+<div id="results"></div>
+
+<a href="indexAr.html">Back To Home Arabic</a>
+<script>
+    const resultslist = document.getElementById('results')
+    new URLSearchParams(window.location.search).forEach((value) => {
+        resultslist.append(value)
+        resultslist.append(document.createElement('br'))
+    })
+</script>
+</body>
+
